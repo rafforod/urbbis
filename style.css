@@ -6,8 +6,8 @@
 
 html, body {
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
+    background: #ffffff;
+    overflow: hidden;
 }
 
 .container {
@@ -17,7 +17,63 @@ html, body {
     height: 100%;
 }
 
-.logo {
-    max-width: 500px; /* ajusta según tu logo */
+/* === GLITCH EFFECT === */
+
+.glitch {
+    position: relative;
+    display: inline-block;
+}
+
+.glitch img {
+    width: 280px;
+    max-width: 80vw;
+    position: relative;
+    z-index: 1;
+}
+
+/* capas glitch */
+.glitch::before,
+.glitch::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-image: url("logo-urbbis.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* glitch rojo */
+.glitch::before {
+    left: 2px;
+    animation: glitch-red 2.5s infinite linear alternate-reverse;
+}
+
+/* glitch azul */
+.glitch::after {
+    left: -2px;
+    animation: glitch-blue 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-red {
+    0% { clip-path: inset(0 0 90% 0); transform: translate(-1px, -1px); }
+    20% { clip-path: inset(10% 0 60% 0); }
+    40% { clip-path: inset(40% 0 20% 0); transform: translate(2px, 0); }
+    60% { clip-path: inset(80% 0 5% 0); }
+    80% { clip-path: inset(20% 0 50% 0); transform: translate(-2px, 1px); }
+    100% { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes glitch-blue {
+    0% { clip-path: inset(80% 0 5% 0); transform: translate(1px, 1px); }
+    20% { clip-path: inset(50% 0 30% 0); }
+    40% { clip-path: inset(10% 0 70% 0); transform: translate(-1px, 0); }
+    60% { clip-path: inset(30% 0 40% 0); }
+    80% { clip-path: inset(70% 0 10% 0); transform: translate(2px, -1px); }
+    100% { clip-path: inset(0 0 0 0); }
 }

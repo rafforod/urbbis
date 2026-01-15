@@ -37,8 +37,8 @@ html, body {
     font-size: 16px;
     border-radius: 25px;
     border: 8px solid #fff;
-    background: 3333FF;
-    color: #05C49F;
+    background: #05C49F;
+    color: #044155;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -102,6 +102,7 @@ html, body {
     80% { clip-path: inset(70% 0 10% 0); transform: translate(2px, -1px); }
     100% { clip-path: inset(0 0 0 0); }
 }
+
 
 
 

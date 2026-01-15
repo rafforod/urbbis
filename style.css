@@ -16,7 +16,30 @@ html, body {
     justify-content: center;
     height: 100%;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
+.btn-ingresar {
+    margin-top: 24px;
+    padding: 12px 36px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-ingresar:hover {
+    background: #fff;
+    color: #000;
+}
 /* === GLITCH EFFECT === */
 
 .glitch {
@@ -77,28 +100,6 @@ html, body {
     80% { clip-path: inset(70% 0 10% 0); transform: translate(2px, -1px); }
     100% { clip-path: inset(0 0 0 0); }
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 
-.btn-ingresar {
-    margin-top: 24px;
-    padding: 12px 36px;
-    font-size: 16px;
-    border-radius: 25px;
-    border: 2px solid #fff;
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
-.btn-ingresar:hover {
-    background: #fff;
-    color: #000;
-}
 

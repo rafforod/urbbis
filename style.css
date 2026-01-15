@@ -21,7 +21,7 @@ html, body {
 
 .btn-ingresar:hover {
     background: #044155;
-    color: #05C49F;
+    color: #FFFFFF;
 }
 .container {
     display: flex;
@@ -38,7 +38,7 @@ html, body {
     border-radius: 25px;
     border: 8px solid #fff;
     background: #05C49F;
-    color: #044155;
+    color: #FFFFFF;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -102,6 +102,7 @@ html, body {
     80% { clip-path: inset(70% 0 10% 0); transform: translate(2px, -1px); }
     100% { clip-path: inset(0 0 0 0); }
 }
+
 
 
 
